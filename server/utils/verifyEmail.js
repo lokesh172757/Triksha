@@ -38,7 +38,7 @@ export const sendOtpForRegister = async (req, res) => {
     });
 
     const response = await resend.emails.send({
-      from: 'Triksha Support <support@triksha.in>',
+      from: 'Triksha Support <onboarding@resend.dev>',
       to: [email],
       subject: 'Email Verification',
       html: `

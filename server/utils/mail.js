@@ -29,7 +29,7 @@ export const sendOtp = async (req, res) => {
 
     // Send OTP email (real inbox now)
     await resend.emails.send({
-      from: 'Triksha Support <support@triksha.in>',
+      from: 'Triksha Support <onboarding@resend.dev>',
       to: [email],
       subject: 'Email Verification to reset password',
       html: `

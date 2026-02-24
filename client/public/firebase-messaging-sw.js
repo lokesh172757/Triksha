@@ -1,24 +1,13 @@
-importScripts('https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/8.2.0/firebase-messaging.js');
+importScripts('https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js');
+importScripts('https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging-compat.js');
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCtGocvbP6NMxTT8LK5VJFAJaZXD0PLsFk",
-  authDomain: "nirogcare-in.firebaseapp.com",
-  projectId: "nirogcare-in",
-  storageBucket: "nirogcare-in.firebasestorage.app",
-  messagingSenderId: "1039659631079",
-  appId: "1:1039659631079:web:590680cbc51d97b00e3d42",
-  measurementId: "G-SEZFH495VL"
-};
+firebase.initializeApp({
+  apiKey: "AIzaSyBkyG-rVhe0LZG4i8YyM1xJR229B_Tq6No",
+  authDomain: "triksha-51e8f.firebaseapp.com",
+  projectId: "triksha-51e8f",
+  storageBucket: "triksha-51e8f.firebasestorage.app",
+  messagingSenderId: "929767311075",
+  appId: "1:929767311075:web:e55ae35c48afc2ce9de7d6"
+});
 
-firebase.initializeApp(firebaseConfig);
-
-//retrive firebase messaging
 const messaging = firebase.messaging();
-
-messaging.onBackgroundMessage(function (payload){
-    console.log("Retrive Background Message",payload);
-    
-})
-
-
